@@ -8,10 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		CD5E18541F3D8CC300076616 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CD5E18531F3D8CC300076616 /* main.c */; };
+		CD5E187A1F3D943D00076616 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CD5E18791F3D943D00076616 /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		CD5E184E1F3D8CC300076616 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		CD5E18751F3D943D00076616 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,10 +35,19 @@
 /* Begin PBXFileReference section */
 		CD5E18501F3D8CC300076616 /* c-how-to-program */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "c-how-to-program"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD5E18531F3D8CC300076616 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		CD5E18771F3D943D00076616 /* exercise-3-18 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "exercise-3-18"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD5E18791F3D943D00076616 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CD5E184D1F3D8CC300076616 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5E18741F3D943D00076616 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				CD5E18521F3D8CC300076616 /* c-how-to-program */,
+				CD5E18781F3D943D00076616 /* exercise-3-18 */,
 				CD5E18511F3D8CC300076616 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				CD5E18501F3D8CC300076616 /* c-how-to-program */,
+				CD5E18771F3D943D00076616 /* exercise-3-18 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +81,14 @@
 				CD5E18531F3D8CC300076616 /* main.c */,
 			);
 			path = "c-how-to-program";
+			sourceTree = "<group>";
+		};
+		CD5E18781F3D943D00076616 /* exercise-3-18 */ = {
+			isa = PBXGroup;
+			children = (
+				CD5E18791F3D943D00076616 /* main.c */,
+			);
+			path = "exercise-3-18";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +111,23 @@
 			productReference = CD5E18501F3D8CC300076616 /* c-how-to-program */;
 			productType = "com.apple.product-type.tool";
 		};
+		CD5E18761F3D943D00076616 /* exercise-3-18 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD5E187B1F3D943D00076616 /* Build configuration list for PBXNativeTarget "exercise-3-18" */;
+			buildPhases = (
+				CD5E18731F3D943D00076616 /* Sources */,
+				CD5E18741F3D943D00076616 /* Frameworks */,
+				CD5E18751F3D943D00076616 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "exercise-3-18";
+			productName = "exercise-3-18";
+			productReference = CD5E18771F3D943D00076616 /* exercise-3-18 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +138,10 @@
 				ORGANIZATIONNAME = "Wei Hong Teo";
 				TargetAttributes = {
 					CD5E184F1F3D8CC300076616 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					CD5E18761F3D943D00076616 = {
 						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
 					};
@@ -110,6 +160,7 @@
 			projectRoot = "";
 			targets = (
 				CD5E184F1F3D8CC300076616 /* c-how-to-program */,
+				CD5E18761F3D943D00076616 /* exercise-3-18 */,
 			);
 		};
 /* End PBXProject section */
@@ -120,6 +171,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD5E18541F3D8CC300076616 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5E18731F3D943D00076616 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5E187A1F3D943D00076616 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +288,20 @@
 			};
 			name = Release;
 		};
+		CD5E187C1F3D943D00076616 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CD5E187D1F3D943D00076616 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -246,6 +319,14 @@
 			buildConfigurations = (
 				CD5E18581F3D8CC300076616 /* Debug */,
 				CD5E18591F3D8CC300076616 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CD5E187B1F3D943D00076616 /* Build configuration list for PBXNativeTarget "exercise-3-18" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD5E187C1F3D943D00076616 /* Debug */,
+				CD5E187D1F3D943D00076616 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
